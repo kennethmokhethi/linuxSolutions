@@ -1,0 +1,54 @@
+Task 1:Basic Task
+cd Desktop
+mkdir myProject
+cd myProject
+touch app.js
+cd ..
+mkdir myProject2
+cd myProject
+cp app.js myProject2
+
+Task 2:Absolute and Relative
+touch exercise.txt
+mv exercise.txt ../../../tmp
+find -type f -name exercise.txt -exec rm {} \;
+
+Task 3:Cat Commands
+cd Desktop
+touch umuzi.txt recruits.txt cohort.txt
+echo "This is the first file named umuzi.">umuzi.txt
+echo "The second file is called recruits.New talent young youth">recruits.txt
+echo "The last file is called cohort.Hooray welcome to the umuzi community.Congratulations tou made it out of thopusands applications">cohort.txt
+cat umuzi.txt recruits.txt cohort.txt
+cat umuzi.txt recruits.txt cohort.txt>>summary.txt
+cat summary.txt>>summary.txt
+ 
+Task 4:The locate command
+find umuzi.txt
+locate umuzi>search_result.txt
+
+Task 5:The locate command cont
+mkdir mydocument
+cd mydocument
+touch pad.txt
+cd ..
+cd Desktop
+mkdir work
+cp ../mydocument/pad.txt work>pad_copy.txt
+locate updatedb
+cd ..
+locate pad_copy.txt
+
+Task 6:Find commands
+find ./ -name *.pdf 
+find ./ -name umuzi.txt -exe cat {} >work \;
+find ./ -type f -mtime -1 -print
+
+Task 7:Text editor
+nano
+Ctrl s my_bio.txt
+Ctrl s
+Ctrl x
+mkdir my_files
+cd my_files
+mv my_bio.txt ../
